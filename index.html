@@ -1,0 +1,211 @@
+<head>
+    <title>Page0</title>
+    <link rel="stylesheet" href="Resources\style.css">
+
+    <!--Transform animation-->
+    <link rel="stylesheet" href="HIanimation.js">
+
+    <!-- popup-->
+    <script>
+        var isOn = false;
+        var popUp;
+
+        function setup() {
+            popUp = document.getElementById("pop-up");
+            console.log("setup");
+        }
+
+        function toggle() {
+            if (isOn) {
+                isOn = false;
+                popUp.style.display = "none";
+            }
+            else {
+                isOn = true;
+                popUp.style.display = "block";
+
+            }
+        }
+    </script>
+
+</head>
+
+
+
+
+
+
+<!--BODY-->
+
+<body onload="setup()">
+
+    <!-- alll -->
+    <div class="all">
+
+
+        <!-- BG VIDEO -->
+        <video autoplay muted loop id="myVideo">
+            <source src="Resources\rain.mp4" type="video/mp4">
+        </video>
+
+
+        <!-- header "Hi!"" -->
+        <div class="hi" id="hi">
+            <div class="top">
+                <h1>Hi there!</h1>
+            </div>
+        </div>
+
+
+        <!-- columns -->
+        <div class="row">
+
+            <!-- column1 -->
+            <div class="column">
+
+                <!-- video Parallax_02-->
+                <div class="videocontainer">
+                    <div class="box">
+                        <img src="Resources\gif_02.gif">
+                        <div class="contentBX">
+                            <h6>This is my first website.<br>
+                                <br>
+                                I started it from scratch in Visual Stidio Code trying to applly many features.
+                            </h6>
+                            <p>
+                                <br>I am prepared for the projects in DIGITALL and more than happy for our future
+                                collaboration.<br><br>And since you are here...
+                                <!--<a href="" class="moreinfo">  >>click>></a>-->
+                                <button id="open" onclick="toggle()"><u>>> click >></u></button>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- column2 -->
+            <div class="column">
+                <div class="questions">
+                    <h3 class="first">My name is </h3>
+                    <h5>Nikoleta Zhecheva</h5>
+                    <h2>2D/3D designer</h2>
+                    <h3>My aim is to work in<br>DIGITALL.</h3>
+                    <!--<h4><font size="+5">&#x263A</font>It is interesting for me to know more about my visitors.</h4>-->
+
+                </div>
+
+                <!-- container -->
+                <div class="pop-up" id="pop-up">
+                    <div class="container" id="container">
+                        <form action="" method="POST" class="form">
+                            <p class="interests">It is interesting for me to know more about my visitors.
+                            <p>
+
+                                <!--ПЪРВИ РЕД-->
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Jane Doe" id="name" name="name"
+                                    tabindex="1" required>
+                                <label for="name" class="from-label">What do you want me to call you? :)
+                                </label>
+                            </div>
+
+                            <!--ВТОРИ РЕД-->
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="jane@coe.com" id="email"
+                                    name="email" tabindex="2" required>
+                                <label for="email" class="from-label">Why you chose to visit my
+                                    website?</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- button -->
+                    <div class="buttonS">
+                        <div class="form-group">
+                            <div onclick="location.href = 'index3_Projects.html';" class="enter_button1">
+                                <a href="index3_Projects.html"> Submit</a>
+                            </div>
+                            <div onclick="location.href = 'index3_Projects.html';" class="enter_button2">
+                                <a href="index3_Projects.html"> or JUST ENTER >></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <!-- slider  
+    <div class="slider">
+
+        <div class="slide-track">
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_01.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_02.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_03.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_04.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_05.jpg" alt="">
+            </div>
+        
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_01.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_02.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_03.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_04.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Resources\slideshow\swideshow_05.jpg" alt="">
+            </div>
+        </div>
+    </div>-->
+
+    </div>
+
+
+
+
+
+    <!-- video Parallax_02-->
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".box"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".box"));
+</script>
+
+</body>
+
+<footer>
+    <!-- Copy from index2.css? -->
+</footer>

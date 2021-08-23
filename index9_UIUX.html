@@ -1,0 +1,162 @@
+<head>
+    <title>3Dgames</title>
+    <link rel="stylesheet" href="Resources\style2.css">
+    
+    <script src="thhps://kit.fontawesome.com/a076d05399.js"></script> <!--SIDEBAR-->
+    <link rel="stylesheet" href="Resources\all.css"> <!--SIDEBAR-->
+    <link rel="stylesheet" type="text/css" href="Resources\css\all.css">
+</head>
+
+
+<!--SCROLL HEADER-->
+<script>
+    var elements;
+    window.onload = function(){
+        elements = document.getElementsByClassName("navButton");
+        console.log("beep");
+    }
+    
+        window.onscroll=function()
+        {
+            if(window.innerWidth/window.innerHeight < 16/9)
+                return;
+    
+    
+            if (document.body.scrollTop>20 || document.documentElement.scrollTop>20)
+            {
+                document.getElementById("idHeader").style.top="-30px";
+                document.getElementById("idnavigation").style.top="10px";
+    
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].style.paddingBottom = "10px";
+                    }            
+            }
+            else
+            {
+                document.getElementById("idHeader").style.top="0px";
+                document.getElementById("idnavigation").style.top="0px";
+    
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].style.paddingBottom = "20px";
+                    }
+            }
+        };
+    
+    </script>
+
+    <script type="text/javascript" src="galleryUIUX.js"></script>
+
+
+
+<body>
+
+    <div class="header" id="idHeader">
+        <div onclick="location.href = 'index.html';" class="beginning">
+            &lsaquo;&lsaquo; &lt; Begin again
+        </div>
+        <div class="navigation" id="idnavigation">
+            <!--<a href="index.html" >&lsaquo;&lsaquo;    Begin again</a>-->
+            <a href="index2.html">CV</a>
+            <a onclick="location.href = 'index3_Projects.html';">Projects</a>
+            <a href="#Line_Contacts">Contacts</a>
+        </div>
+
+        <div class="navigationMobile">
+            <nav>
+                <a href="#"><img src="Resources/menu2.png" class="dropping" alt=""></a>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-arrow-alt-circle-left"></i>Begin again</a></li>
+
+                    <li><a href="index2.html"><i class="fas fa-user-circle"></i>CV</a></li>
+
+                    <li><a href="#Line_Projects"><i class="fas fa-photo-video"></i>Projects</a></li>
+
+                    <li><a href="#Line_Contacts"><i class="fas fa-phone-alt"></i>Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="renders" id="renderPage">
+
+        <h1>UI/UX design</h1>
+        <hr class="renhr">
+
+        <div id="projects">
+
+            <div class="ren">
+                <img src="Resources/placeholder_render1.jpg">
+                <div class="overlay">
+                    <div class="text"> Render name</div>
+                </div>
+            </div>
+
+            <div class="ren">
+                <img src="Resources/placeholder_render1.jpg">
+                <div class="overlay" onclick="showLightbox(1)">
+                    <div class="text"> Render name</div>
+                </div>
+            </div>
+
+            <div class="ren">
+                <img src="Resources/placeholder_render1.jpg">
+                <div class="overlay" onclick="showLightbox(2)">
+                    <div class="text"> Render name</div>
+                </div>
+            </div>
+
+            <div class="ren">
+                <img src="Resources/placeholder_render1.jpg">
+                <div class="overlay" onclick="showLightbox(0)">
+                    <div class="text"> Render name</div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="footer">
+                <div class="navigation_footer">
+                    <img src="Resources\GIF.gif">
+                    <a href="index2.html">Email: nikoleta_zhecheva@abv </a>
+                </div>
+
+                <div class="navigation_footer">
+                    <img src="Resources\GIF.gif">
+                    <a href="tel:+359-879464103">Phone: +359 879 464 103</a>
+                </div>
+
+                <div class="navigation_footer">
+                    <img src="Resources\GIF.gif">
+                    <a href="index2.html">Behence</a>
+                </div>
+
+                <div class="navigation_footer">
+                    <img src="Resources\GIF.gif">
+                    <a href="index2.html">Linkedin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="lightbox" id="lightBoxID">
+        <div class="lightboxImage">
+            <img src="Resources/placeholder_render1.jpg" alt="Zoomed" class="center" id="myImg">
+        </div>
+        <div class="galleryButtons">
+            <button onclick="changeImage(-1)" id="leftButton" class="imageButton">Left</button>
+            <div id="imageText"> Image name </div>
+            <button onclick="changeImage(1)" id="rightButton" class="imageButton">Right</button>
+        </div>
+
+        <div id="closeButton"><button onclick="closeLightbox()">X</button></div>
+    </div>
+
+</body>

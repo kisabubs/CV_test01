@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+:root
+{
+    --labelSize: 24px;
+    --shitUp: -1.6em;
+    --test: 500px;
+    --disp: block;
+    --col: rgb(55,55,55);
+    --marginLeft: 10px;
+    transition: 1s;
+}
+body{
+
+    transition:all 1s;
+}
+input
+{
+    transition: 0.5s;
+    width: var(--test);
+    height: 45px;
+    font-size: 24px;
+    border-color: rgb(74, 121, 129);
+    border-style: none none solid none;
+    padding-left: 10px;
+}
+
+label, 
+input:not(:placeholder-shown) + label,
+input:focus + label
+{
+    text-align: left;
+    position: relative;
+    display: block;
+    transform: translateY(var(--shitUp)) translateX(2.8em);
+    font-size: 24px;
+    transition: all 1s;
+    transform-origin: 0 0;
+    color: var(--col);
+    margin-left: var(--marginLeft);
+}
+
+
+
+input:focus
+{
+    background-color: rgba(255, 0, 0, 0.26);
+    border-color: rgb(74, 121, 129);
+    border-style: none none solid none;
+    --shitUp: 0.6em;
+}
+
+input:not(:placeholder-shown){
+ background-color: aqua;   
+ --shitUp: 0.6em;
+ --marginLeft: 100px;
+ --col: rgb(0, 194, 10);
+
+}
+/*
+input:focus + label,
+label + input:not(:placeholder-shown){
+
+    text-align: left;
+    transform: translateY(0.6em) translateX(0.8em) scale(0.5, 0.5);
+
+}
+*/
+label:hover{
+    --col: rgb(0, 194, 10);
+    
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+    <input 
+type="text" 
+class="form-control"
+placeholder="sadasd" 
+id="name" 
+name="name"
+tabindex="1" 
+required>
+<label for="name" class="from-label">What do you want me to call you? :) </label>
+
+
+
+</body>
+</html>

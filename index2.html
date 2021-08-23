@@ -1,0 +1,536 @@
+
+<head>
+    <title>Pr3</title>
+    <link rel="stylesheet" href="Resources\style2.css">
+    <script type="text/javascript" src="gallery.js"></script>
+    <script src="thhps://kit.fontawesome.com/a076d05399.js"></script> <!--SIDEBAR-->
+    <link rel="stylesheet" href="Resources\all.css">  <!--SIDEBAR-->
+    <link rel="stylesheet" type="text/css" href="Resources\css\all.css">
+</head>
+
+<script>
+var elements;
+window.onload = function(){
+    elements = document.getElementsByClassName("navButton");
+    console.log("beep");
+}
+
+    window.onscroll=function()
+    {
+        if(window.innerWidth/window.innerHeight < 16/9)
+            return;
+
+
+        if (document.body.scrollTop>20 || document.documentElement.scrollTop>20)
+        {
+            document.getElementById("idHeader").style.top="-30px";
+            document.getElementById("idnavigation").style.top="10px";
+
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.paddingBottom = "10px";
+
+                }
+           
+        }
+        else
+        {
+            document.getElementById("idHeader").style.top="0px";
+            document.getElementById("idnavigation").style.top="0px";
+
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.paddingBottom = "20px";
+                }
+        }
+    };
+
+</script>
+
+
+<body>
+    <!--SIDEBAR-->
+<!--<input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>My App</header>
+        <ul>
+            <li><a href="#"><i class="fas fa-arrow-alt-circle-left"></i>Begin again</a></li>
+            <li><a href="#"><i class="fas fa-user-circle"></i>CV</a></li>
+            <li><a href="#"><i class="fas fa-photo-video"></i>Projects</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Contacts</a></li>
+        </ul>
+    </div>
+    -->
+<!--<section>
+    </section>
+-->
+
+
+<!--MOUSE
+<svg class="mouse" xmlns="..." viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
+    <g fill="none" fill-rule="evenodd">
+    <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+    <circle cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+    </g>
+  </svg>
+-->
+ 
+    <div id="top2"></div>
+            <!--
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <header>My App</header>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-arrow-alt-circle-left"></i>Begin again</a></li>
+                    <li><a href="#top2"><i class="fas fa-user-circle"></i>CV</a></li>
+                    <li><a href="#Line_Projects"><i class="fas fa-photo-video"></i>Projects</a></li>
+                    <li><a href="index2.html"><i class="fas fa-phone-alt"></i>Contacts</a></li>
+                </ul>
+            </div>
+            -->
+            
+
+
+            <div class="header" id="idHeader" >
+                <div onclick="location.href = 'index.html';" class="beginning">
+                    &lsaquo;&lsaquo;   &lt; Begin again
+                </div>
+                <div class="navigation" id="idnavigation"> 
+                    <!--<a href="index.html" >&lsaquo;&lsaquo;    Begin again</a>-->
+                    <a href="index3_Projects.html" class="navButton">Projects</a>
+                    <a onclick="location.href = '#top2';" class="navButton">CV</a>
+
+                    <a href="#Line_Contacts" class="navButton">Contacts</a>
+                </div>
+
+                
+            <div class="navigationMobile">
+                <nav>
+                    
+                    <a href="#"><img src="Resources/menu2.png" class="dropping" alt=""></a>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-arrow-alt-circle-left"></i>Begin again</a></li>
+                        
+                        <li><a href="#top2"><i class="fas fa-user-circle"></i>CV</a></li>
+                        
+                        <li><a href="index3_Projects.html"><i class="fas fa-photo-video"></i>Projects</a></li>
+                       
+                        <li><a href="#Line_Contacts"><i class="fas fa-phone-alt"></i>Contacts</a></li>
+                        
+                    </ul>
+                    
+
+                    </dev>
+                </nav>
+            </div>
+
+
+
+
+            </div>
+            
+
+
+
+
+            <!--dropdown menu-->
+           <!--  <div class="navigationMobile">
+                <a href=""><img src="Resources/menu2.png" alt=""></a> 
+            </div> -->
+
+
+
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="column" id="bg_Image">
+                <div class="BG_image">
+                    <img class="image" src="Resources/Photo_new_big2.jpg">
+                </div>
+            </div>
+
+                <div class="column">
+                    <div class="name">
+                        <h1>Nikoleta Zhecheva</h1>
+                        <hr>
+                        <h2>2D/3D designer</h2>
+                        <p>
+                            I am a professional and ambitious 2D/3D Designer with around 5 years of experience in the field.
+                            I have always admired new technologies and things made in the design community.
+                            <br>
+                            <br>
+                            I am a team-oriented expert and have the ability to develop in ever-changing and dynamic environments.
+                            <br>
+                            <br>
+                            I am a professional and ambitious 2D/3D Designer with around 5 years of experience in the field.
+                            I have always admired new technologies and things made in the design community.
+                            I am a professional and ambitious 2D/3D Designer with around 5 years of experience in the field.
+                            I have always admired new technologies and things made in the design community.
+                            I am a professional and ambitious 2D/3D Designer with around 5 years of experience in the field.
+                            I have always admired new technologies and things made in the design community.
+                            
+                        <p>
+                    </div>
+                </div>
+        </div>  
+        
+
+
+
+        
+        
+        <div class="Technology">
+
+
+            <div id="Expirience" class="CV">
+                <h1>Experience</h1>
+                <hr>
+
+                <!--Programm01-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>3DSmax</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-3ds">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm02-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Blender</p>
+
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm03-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Unreal engine</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>ZBrush</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Substance</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Corona</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Vray renderer</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Photoshop</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Ilustrator</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Indesign</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>After Effects</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>CorelDRAW</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Figma</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>Adobe XD</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>HTML</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>CSS</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+                <!--Programm04-->
+                <div class="modul">
+                    <img src="Resources\GIF.gif">
+                    <p>JAVA script</p>
+                    <div class="fillbar" >
+                        <div class="fill_amount" id="fill-Photoshop">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div id="Work Experience" class="CV">
+                <h1>Work Experience</h1>
+                <hr>
+
+                <div class="paragraph">
+                    <a href="https://digitall.com/" target="_blank"> <b>Bulpros Consulting >> DIGITALL</b></a>  <b>- 2D/3D Designer</b> <small>--Mar 2019 - untill now</small>
+                    <br>
+                    3DsMAX, Photoshop, Illustrator, After Effects, Blender, Unity, Figma, Adobe XD, InDesign
+                    <br>
+                    <br>
+                    <a href="https://visteon.bg/?lang=bg" target="_blank" >Visteon</a> - Complex UI for interior automotive electronics, such as: clusters, infotainment systems, HUD displays, ets. Different clients specific requirements leading to different approaches and implementations, including - basic UI design, motion graphic animations and 3D animations. Working and interacting with other 2D/3D designers, engineers, developers, other teams. The projects include creating concepts and content for 2D graphics animation, implementing of 3D models, unwrapping, taking in mind wire frames and design. Responsible for planning, processing and performing in an efficient manner, Responsible for utilizing all forms of communication an spreadsheets with different specifications and information. Maintain positive and strong inter-personal interactions with other colleagues and clients.
+                    <br>
+                    <a href="https://www.webit.org/festival-europe/index.php" target="_blank">Webit</a> - Create and redesign organisator’s website for conference meetings and online events so to have  better connection with its audience, including building more intuitive information architecture and developing a coherent visual UI/UX language. Working and interacting with other 2D designers, client, engineers, developers, other teams. Responsible for utilizing all forms of communication an spreadsheets with different specifications and information. Maintain positive and strong inter-personal interactions with other colleagues and clients.
+                    
+                </div>
+
+                <div class="paragraph">
+                    <a href="https://images.unsplash.com/photo-1578852612716-854e527abf2e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZW1wdHklMjBwYWdlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" target="_blank"> <b>Privatiselectionem</b></a>
+                    <b>- 3D Designer (visualizing)</b>   <small>-- August 2017 – March 2019</small>
+                    <br>
+                    <br>
+                    3DsMAX, Photoshop, V-ray, Corona
+                    <br>
+                    Creating realistic 3D models, unwrap, textures, scenes for interior design purpose-3DSmax.
+                    Postproduction-Photoshop. Reaction to quick orders and changes occurring. Multitasking with preserve dedlines.
+                    
+                </div>
+
+                <div class="paragraph"> 
+                    <a href="https://www.redvertex.com/" target="_blank"> <b>Red Vertex</b></a>
+                    <b>- 3D Designer (visualizing)</b>  <small>-- Jun 2017 - Aug 2017</small></p>
+                    MAX, V-Ray и Unreal Engine 4, VR with changable assets and materials. Work in a team or in independent projecs.</small>
+                </div>
+
+                <div class="paragraph">
+                    <a href="https://images.unsplash.com/photo-1578852612716-854e527abf2e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZW1wdHklMjBwYWdlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" target="_blank"> <b>ABV and SON</b></a>
+                    <b>- 3D Designer (visualizing)</b>  <small>-- 2016 - Jul 2016</small>
+                    <br>
+                    AutoCAD 3D, F-utils, imos
+                </div>
+
+                <div class="paragraph">
+                    <a href="https://www.facebook.com/AnnoZeroLtd/" target="_blank"> <b>Anno Zero LTD</b></a>
+                    <b>- 3D Designer (visualizing)</b>  <small>-- 2016 - Sept 2016</small>
+                    <br>
+                    3DS Max, V-Ray for interior projcts. Postproduction in Photoshop.
+                </div>
+
+            </div>
+
+
+            <div id="Trainings" class="CV">
+                <h1>Education</h1>
+                <hr>
+
+                <div class="paragraph">
+                    <a href="" target="_blank"> <b>Game design (2020) - </b></a>
+                    ARC academy - Sofia, Bulgaria
+                </div>
+
+                <div class="paragraph">              
+                    <a href="https://images.pond5.com/vintage-loading-bar-80s-90s-footage-141567364_iconl.jpeg" target="_blank"> <b>Master's degree in Computer Games Design (2017) - </b></a>
+                    National Academy of Arts - Sofia, Bulgaria
+                </div>
+
+                <div class="paragraph">
+                    <a href="https://images.pond5.com/vintage-loading-bar-80s-90s-footage-141567364_iconl.jpeg" target="_blank"> <b>Bachelor's degree in Design of Children’s Environment and Pedagogy of art teaching (2015) - </b></a>
+                    National Academy of Arts - Sofia, Bulgaria
+                </div>
+
+                <div class="paragraph">
+                    <a href="https://images.pond5.com/vintage-loading-bar-80s-90s-footage-141567364_iconl.jpeg" target="_blank"> <b>Erasmus - Bachelor's degree (2013) - </b></a>
+                    UCLM Cuenca, Spain
+                </div>
+
+                <div class="paragraph">
+                    <a href="https://images.pond5.com/vintage-loading-bar-80s-90s-footage-141567364_iconl.jpeg" target="_blank"> <b>Additional courses - </b></a>
+                    Photoshop, After Effects, 3DS max, ZBrush, Unreal Engine, Unity Engine, HTML5 (HTML, CSS, JAVA script)
+                </div>
+
+                <div class="paragraph">
+                    <a href="https://images.pond5.com/vintage-loading-bar-80s-90s-footage-141567364_iconl.jpeg" target="_blank"> <b>Additional activities - </b></a>
+                    <br>
+                    - Global game jam 2017-2021
+                    <br>
+                    - Hard core game jam 2018-2020
+                    <br>
+                    - NASA and HP Mars challenge, 2018
+                    <br>
+                    - V-Ray certificate from CHAOS GROUP
+                    <br>
+                    - Participation in seminars on Personal development and Digital art
+                    <br>
+                    - English B2 certificate and courses
+
+                </div>
+
+            </div>
+        </div>
+    <!--        
+    <hr class="Line_Projects" id="Line_Projects">
+
+    <div class="renders" id="renderPage">  
+
+        <h1>Projects</h1>
+     
+        <div id="projects">
+
+        <div class="ren">
+            <img src="Resources/placeholder_render1.jpg">
+            <div class="overlay">
+                <div class="text"> Render name</div>
+            </div>           
+        </div>
+
+        <div class="ren">
+            <img src="Resources/placeholder_render1.jpg">
+            <div class="overlay"  onclick="showLightbox(1)">
+                <div class="text"> Render name</div>
+            </div>           
+        </div>
+
+        <div class="ren">
+            <img src="Resources/placeholder_render1.jpg">
+            <div class="overlay"  onclick="showLightbox(2)">
+                <div class="text"> Render name</div>
+            </div>           
+        </div>
+
+        <div class="ren">
+            <img src="Resources/placeholder_render1.jpg">
+            <div class="overlay"  onclick="showLightbox(0)">
+                <div class="text"> Render name</div>
+            </div>           
+        </div>
+    -->
+        </div>             
+    </div>
+
+
+
+    <div class="footer">
+        <div class="navigation_footer"> 
+            <img src="Resources\GIF.gif">
+            <a href="index2.html">Email: nikoleta_zhecheva@abv </a>
+        </div>
+
+        <div class="navigation_footer"> 
+            <img src="Resources\GIF.gif">
+            <a href="index2.html">Phone: +359 879 464 103</a>
+        </div>
+
+        <div class="navigation_footer"> 
+            <img src="Resources\GIF.gif">
+            <a href="index2.html">Behence</a>
+        </div>
+
+        <div class="navigation_footer"> 
+            <img src="Resources\GIF.gif">
+            <a href="index2.html">Linkedin</a>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightBoxID">
+        <div class="lightboxImage">
+            <img src="Resources/placeholder_render1.jpg" alt="Zoomed" class="center" id="myImg">
+        </div>
+        <div class="galleryButtons">
+            <button onclick="changeImage(-1)" id="leftButton" class="imageButton">Left</button>
+            <div id="imageText"> Image name </div>
+            <button onclick="changeImage(1)" id="rightButton" class="imageButton">Right</button>
+        </div>
+
+        <div id="closeButton"><button onclick="closeLightbox()">X</button></div>
+    </div>
+
+
+</body> 
